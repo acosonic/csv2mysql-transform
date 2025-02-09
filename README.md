@@ -1,7 +1,10 @@
 # csv2mysql-transform
 Loads csv file into mysql database and allows per row transformation,
 per-row transformation is given in separate file loaded as argument, 
-so that it can be used multiple times on per-csv/mysql table 
+so that it can be used multiple times on per-csv/mysql table.
+
+Also this is done using async/await and stream way, to avoid RAM memory issues.
+
 
 ## Example CSV Input
 
@@ -32,4 +35,4 @@ async,csv-parser,mysql (or mysql2 you can modify code...)
 Run the script with the following command:
 
 ```bash
-node csvmysqltload.js mytable data.csv 100
+node csvmysqltload.js mytable data.csv mydatatransform.js 20
