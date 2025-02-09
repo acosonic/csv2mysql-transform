@@ -1,5 +1,7 @@
 # csv2mysql-transform
-Loads csv file into mysql database and allows per row transformation
+Loads csv file into mysql database and allows per row transformation,
+per-row transformation is given in separate file loaded as argument, 
+so that it can be used multiple times on per-csv/mysql table 
 
 ## Example CSV Input
 
