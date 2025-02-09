@@ -3,7 +3,7 @@ Loads csv file into mysql database and allows per row transformation,
 per-row transformation is given in separate file loaded as argument, 
 so that it can be used multiple times on per-csv/mysql table.
 
-Also this is done using async/await and stream way, to avoid RAM memory issues.
+Also code is done using async/await and stream way, to avoid RAM memory issues.
 
 
 ## Example CSV Input
