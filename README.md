@@ -19,6 +19,12 @@ The `transformRow` function will convert the `date_column` values to:
 
 ---
 
+Customizations of per-row transformation should be done in transformRow function
+
+Requirements: 
+
+async,csv-parser,mysql (or mysql2 you can modify code...)
+
 ## Usage Example
 
 Run the script with the following command:
